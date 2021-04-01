@@ -1,0 +1,37 @@
+const URL = process.env.PUBLIC_URL;
+
+const images = [
+  `${URL}/images/trailer.png`,
+  `${URL}/images/front/gloss-med-gray.png`,
+  `${URL}/images/front/gloss-orange.png`,
+  `${URL}/images/front/gloss-white.png`,
+  `${URL}/images/front/matte-black.png`,
+  `${URL}/images/front/matte-charcoal.png`,
+  `${URL}/images/front/matte-dark-blue.png`,
+  `${URL}/images/front/matte-elder-white.png`,
+  `${URL}/images/front/matte-greige.png`,
+  `${URL}/images/front/matte-red.png`,
+  `${URL}/images/front/non-gelcoat.png`,
+  `${URL}/images/rear/gloss-med-gray.png`,
+  `${URL}/images/rear/gloss-orange.png`,
+  `${URL}/images/rear/gloss-white.png`,
+  `${URL}/images/rear/matte-black.png`,
+  `${URL}/images/rear/matte-charcoal.png`,
+  `${URL}/images/rear/matte-dark-blue.png`,
+  `${URL}/images/rear/matte-elder-white.png`,
+  `${URL}/images/rear/matte-greige.png`,
+  `${URL}/images/rear/matte-red.png`,
+  `${URL}/images/rear/non-gelcoat.png`,
+  `${URL}/images/full/gloss-med-gray.png`,
+  `${URL}/images/full/gloss-orange.png`,
+  `${URL}/images/full/gloss-white.png`,
+  `${URL}/images/full/matte-black.png`,
+  `${URL}/images/full/matte-charcoal.png`,
+  `${URL}/images/full/matte-dark-blue.png`,
+  `${URL}/images/full/matte-elder-white.png`,
+  `${URL}/images/full/matte-greige.png`,
+  `${URL}/images/full/matte-red.png`,
+  `${URL}/images/full/non-gelcoat.png`,
+];
+
+export default images;

@@ -1,25 +1,40 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 import Trailer from './components/Trailer';
 import ColorPicker from './components/ColorPicker';
-// import SlashStyle from './components/SlashStyle';
+import imgs from './images';
 import PDFCreation from './components/PDFCreation';
+import { cacheImages } from './cacheImages';
+
+import Spinner from './components/Spinner';
 
 import classes from './App.module.scss';
 
 function App() {
   const [frontColor, setFrontColor] = useState('');
   const [rearColor, setRearColor] = useState('');
+  const [isLoading, setIsLoading] = useState(true);
+
+  console.log(isLoading);
+
+  useEffect(() => {
+    cacheImages(imgs, setIsLoading);
+  }, []);
 
   return (
     <main className={classes.MainWrapper}>
       <h1>Virtual Designer</h1>
       <div className='rounded-xl mt-8 w-2/3 m-auto py-10'>
-        <Trailer rearColor={rearColor} frontColor={frontColor} />
-        <div className='flex items-center justify-between px-20'>
-          <ColorPicker label='Rear color' color={rearColor} setColor={setRearColor} />
-          <ColorPicker label='Front color' color={frontColor} setColor={setFrontColor} />
-        </div>
+        {isLoading && <Spinner />}
+        {!isLoading && (
+          <>
+            <Trailer rearColor={rearColor} frontColor={frontColor} />
+            <div className='flex items-center justify-between px-20'>
+              <ColorPicker label='Rear color' color={rearColor} setColor={setRearColor} />
+              <ColorPicker label='Front color' color={frontColor} setColor={setFrontColor} />
+            </div>
+          </>
+        )}
         <div className='px-20'>
           <h1 className='mt-12'>CREATE YOUR WORKSHEET</h1>
           <hr className='border-dashed my-4' />
