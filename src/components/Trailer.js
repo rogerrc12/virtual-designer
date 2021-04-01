@@ -21,6 +21,7 @@ const Trailer = ({ frontColor, rearColor }) => {
           src={`${process.env.PUBLIC_URL}/images/${type}/${frontColor === rearColor ? `${frontColor}.png` : `${rearColor}/${rearColor}-${frontColor}.png`}`}
           width={950}
           className='mx-auto'
+          alt='Trailer'
         />
       )}
     </div>
