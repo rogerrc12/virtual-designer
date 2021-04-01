@@ -4,12 +4,11 @@ export const cacheImages = async (srcArray, setIsloading) => {
       const img = new Image();
 
       img.src = src;
-      img.onload = resolve();
+      img.onload = resolve(src);
       img.onerror = reject();
     });
   });
 
   await Promise.all(promises);
-
   setIsloading(false);
 };
