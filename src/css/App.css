@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: white;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: white;
+  font-weight: 700;
+  font-family: 'Roboto Slab', serif;
+}
+
+.non-gelcoat {
+  background-color: #f6fdcf;
+}
+
+.gloss-white {
+  background-color: #fff;
+}
+
+.matte-elder-white {
+  background-color: #eff0e4;
+}
+
+.matte-greige {
+  background-color: #efefed;
+}
+
+.gloss-med-gray {
+  background-color: #c0c0c0;
+}
+
+.matte-charcoal {
+  background-color: #808080;
+}
+
+.matte-black {
+  background-color: #2d2a2b;
+}
+
+.gloss-orange {
+  background-color: #f8991c;
+}
+
+.matte-red {
+  background-color: #bf2026;
+}
+
+.matte-dark-blue {
+  background-color: #1e4a7e;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.black {
+  background-color: black;
+}
+
+.grey {
+  background-color: darkgrey;
+}
+
+.lightgrey {
+  background-color: lightgrey;
+}
+
+.orange {
+  background-color: orange;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.green {
+  background-color: green;
+}
+
+.red {
+  background-color: orangered;
+}
