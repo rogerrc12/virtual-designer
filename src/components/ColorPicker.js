@@ -28,7 +28,7 @@ const ColorPicker = ({ setColor, color, label }) => {
           className={`block appearance-none w-1/2 bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500 ${classes.Select}`}
           onChange={onSelectChange}
           value={color}>
-          <option value=''>Sin color</option>
+          <option value=''>-</option>
           <option value='gloss-white'>Gloss white</option>
           <option value='non-gelcoat'>Non gelcoat</option>
           <option value='matte-elder-white'>Matte Elder White</option>

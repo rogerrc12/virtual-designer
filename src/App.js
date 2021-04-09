@@ -15,8 +15,6 @@ function App() {
   const [rearColor, setRearColor] = useState('');
   const [isLoading, setIsLoading] = useState(true);
 
-  console.log(isLoading);
-
   useEffect(() => {
     cacheImages(imgs, setIsLoading);
   }, []);
