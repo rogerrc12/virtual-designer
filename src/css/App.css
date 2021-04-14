@@ -1,18 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;700;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300;400;600&display=swap');
 
 body {
-  font-family: 'Roboto', sans-serif;
-  color: white;
+  font-family: 'Teko', sans-serif;
+  font-size: 18px;
 }
 
 h1,
 h2,
 h3,
 h4 {
-  color: white;
   font-weight: 700;
-  font-family: 'Roboto Slab', serif;
 }
 
 .non-gelcoat {
