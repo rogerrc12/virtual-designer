@@ -41,7 +41,12 @@ function App() {
           </p>
         </div>
         <div className='flex justify-center my-8'>
-          <a href='https://core-ice.com/models/' className='uppercase font-bold py-4 px-12 border border-black text-white rounded' style={{ backgroundColor: '#24317A' }}>
+          <a
+            href='https://core-ice.com/models/'
+            target='_blank'
+            rel='noopener noreferrer'
+            className='uppercase font-bold py-4 px-12 border border-black text-white rounded'
+            style={{ backgroundColor: '#24317A' }}>
             See Models
           </a>
         </div>
