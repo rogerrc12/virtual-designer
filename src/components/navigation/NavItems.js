@@ -23,7 +23,7 @@ const NavItems = () => {
       </div>
       <nav className={`w-full py-2 px-8 flex items-center justify-between main-nav ${scrollTop > 0 ? 'sticky-nav' : ''}`}>
         <a href='https://core-ice.com/' className='main-logo'>
-          <img src={Logo} alt='logo' width={140} />
+          <img src={Logo} alt='logo' width={135} />
         </a>
         <ul className={`flex items-center justify-end ${opened ? 'opened' : ''}`}>
           <NavItem link='https://core-ice.com/'>CORE ICE</NavItem>
