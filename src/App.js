@@ -1,14 +1,11 @@
 import React, { useEffect, useState } from "react";
-
-import Trailer from "./components/Trailer";
-import ColorPicker from "./components/ColorPicker";
-import imgs from "./images";
-import NavItems from "./components/navigation/NavItems";
-import { cacheImages } from "./cacheImages";
-
-import Spinner from "./components/Spinner";
-
 import classes from "./App.module.scss";
+import { cacheImages } from "./cacheImages";
+import ColorPicker from "./components/ColorPicker";
+import NavItems from "./components/navigation/NavItems";
+import Spinner from "./components/Spinner";
+import Trailer from "./components/Trailer";
+import imgs from "./images";
 
 function App() {
   const [frontColor, setFrontColor] = useState("gloss-white");
@@ -27,8 +24,8 @@ function App() {
           <h1>Visualize Your CORE</h1>
           <hr className="border-dashed my-4" />
           <p>
-            The "Visualize Your CORE" displays the color selections for the CORE ICE 8019 ATX. 6511 and 6515 Models only have one solid color choice for the exterior of the unit.
-            6519, 8019, and 8025 Models have multiple color choices.
+            The "Visualize Your CORE" displays the color selections for the CORE ICE 8019 ATX. NOTE: 6511 and 6515 Models only have one solid color choice for the exterior of the
+            unit. The 6519 and 8019 models have multiple color choices.
           </p>
         </div>
         <div className="rounded-xl mt-8 w-full md:w-2/3 m-auto px-10 px-4">
@@ -49,7 +46,8 @@ function App() {
             target="_blank"
             rel="noopener noreferrer"
             className="uppercase font-bold py-4 px-12 border border-black text-white rounded"
-            style={{ backgroundColor: "#24317A" }}>
+            style={{ backgroundColor: "#24317A" }}
+          >
             See Models
           </a>
         </div>
